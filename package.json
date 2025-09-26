@@ -1,0 +1,30 @@
+{
+  "name": "hhp1",
+  "version": "1.0.0",
+  "type": "module",
+
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "npx hardhat clean && rimraf ./fr_p1/src/contracts",
+    "compile": "npx hardhat compile",
+    "postcompile": "node -e \"require('fs-extra').copySync('./artifacts/contracts/Counter.sol/Counter.json', './fr_p1/src/contracts/Counter.json', { overwrite: true })\""
+  },
+
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.1",
+    "@nomicfoundation/hardhat-ignition": "^3.0.3",
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.0",
+    "@types/chai": "^4.3.20",
+    "@types/chai-as-promised": "^8.0.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.18.6",
+    "chai": "^5.3.3",
+    "ethers": "^6.15.0",
+    "forge-std": "github:foundry-rs/forge-std#v1.9.4",
+    "fs-extra": "^11.3.2",
+    "hardhat": "^3.0.6",
+    "mocha": "^11.7.2",
+    "rimraf": "^6.0.1",
+    "typescript": "~5.8.0"
+  }
+}

@@ -1,0 +1,80 @@
+# Node modules
+/node_modules
+
+# Compilation output
+/dist
+
+# pnpm deploy output
+/bundle
+
+# Hardhat Build Artifacts
+/artifacts
+
+# Hardhat compilation (v2) support directory
+/cache
+
+# Typechain output
+/types
+
+# Hardhat coverage reports
+/coverage
+
+----------------------------------------------------------------------
+GLOBAL IGNORES (Node/OS)
+----------------------------------------------------------------------
+node_modules
+/npm-debug.log
+.DS_Store
+.env
+.env.*
+.vscode/
+
+Compilation output
+/dist
+
+----------------------------------------------------------------------
+HARDHAT IGNORES
+----------------------------------------------------------------------
+Hardhat Build Artifacts
+/artifacts
+
+Hardhat compilation (v2) support directory
+/cache
+
+The Ignition directory contains deployment execution results.
+/ignition/deployments
+
+Typechain output (standard and specific versions)
+/types
+/typechain-types
+/typechain
+/typechain-ethers-v6
+
+Hardhat coverage reports
+/coverage
+
+pnpm deploy output
+/bundle
+
+----------------------------------------------------------------------
+FRONTEND (fr_p1) IGNORES (React/Vite)
+----------------------------------------------------------------------
+Dependencies
+fr_p1/node_modules
+
+Build output folder (usually 'dist' for Vite)
+fr_p1/dist
+
+Frontend cache directories
+fr_p1/.vite
+fr_p1/.netlify
+
+TypeScript cache files
+fr_p1/tsconfig.tsbuildinfo
+
+----------------------------------------------------------------------
+CUSTOM ARTIFACTS (The Linked File)
+----------------------------------------------------------------------
+IMPORTANT: We ignore the specific file copy location in the frontend's src
+because it is auto-generated during the postcompile script.
+fr_p1/src/contracts/Counter.json
